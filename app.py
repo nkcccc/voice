@@ -312,6 +312,7 @@ for msg in st.session_state.messages:
         max-width: 78%;
         margin: 4px 0;
         font-size: 15px;
+        color: #111111;
         line-height: 1.4;
         box-shadow: 0 1px 2px rgba(0,0,0,0.08);
     '>
@@ -350,6 +351,7 @@ if user_input:
     st.session_state.messages.append({"role": "assistant", "content": reply})
     save_memory(memory)
     st.rerun()
+
 
 
 
